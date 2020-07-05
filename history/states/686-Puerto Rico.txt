@@ -1,0 +1,28 @@
+state={
+	id=686
+	name="STATE_686"
+	manpower = 12000
+	
+	state_category = rural
+
+	history={
+		add_core_of = PIR
+		owner = PIR
+		victory_points = {
+			1440 1 
+		}
+		buildings = {
+			infrastructure = 0
+			industrial_complex = 0
+			air_base = 0
+			1440 = {
+				naval_base = 0
+
+			}
+		}
+	}
+
+	provinces={
+		1440 4155 
+	}
+}

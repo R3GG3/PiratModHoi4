@@ -1,0 +1,33 @@
+state=
+{
+	id=318
+	name="STATE_318"
+	manpower = 218000
+	
+	state_category = town
+	
+	resources={
+		
+	}
+	history=
+	{
+		owner = PIR
+		buildings = {
+			infrastructure = 0
+			arms_factory = 0
+			industrial_complex = 0 
+			air_base = 0
+			4641 = {
+				naval_base = 0
+			}
+		}
+		add_core_of = PIR
+		victory_points = {
+			4641 5 
+		}
+
+	}
+	provinces={
+		1594 1635 4641
+	}
+}

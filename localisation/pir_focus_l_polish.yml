@@ -1,0 +1,34 @@
+﻿l_polish:
+###[[POLITICS]]###
+ PIR_settle_island:0 "Osiedlanie Wyspy"
+ PIR_settle_island_desc:0 "Musimy zbudować podstawowe rzeczy, zanim zrobimy coś innego!"
+ PIR_form_goverment:0 "Formowanie Rządu"
+ PIR_form_goverment_desc:0 "Piraci ustanawiają własny rząd, aby obronić się przed Imperlialistyczną Cywilizacją."
+ go_fascism:0 "Piraci Najlepsi!"
+ go_fascism_desc:0 "Hitler może pierdolić, że Niemcy są najlepsze, ale to my królujemy na morzu!"
+ go_communism:0 "Wspólnie Zwyciężymy!"
+ go_communism_desc:0 "Wszyscy Kamraci uważają, że Stalin ma trochę racji, w tym, że trzeba się dzielić Arrrr!"
+ 
+ ###FASCIZM###
+ 
+ 
+ 
+ 
+ 
+ ###COMMUNISM###
+ 
+ 
+ 
+ ###[[ARMIES]]###
+ pir_army:0 "Stworzenie Regularnej Armii"
+ pir_army_desc:0 "Nasze Państwo potrzebuje armii, jeżeli mamy przetrwać!"
+ pir_navy:0 "Stworzenie Głównej Bazy Morskiej"
+ pir_navy_desc:0 "Aby konkurować z wielkimi krajami, będzie nam potrzebna wielka flota, może nawet dwie!"
+ pir_industrial:0 "Tworzenie Plantacji"
+ pir_industrial_desc:0 "Nie samą wojną człowiek żyje!"
+ pir_defense:0 "Stworzenie Prowizorycznej Obrony"
+ pir_defense_desc:0 "Musimy bronić się przed Cywilizacją!"
+ pir_create_national_guard:0 "Sformułuj Gwardię Narodową"
+ pir_create_national_guard_desc:0 "Będziemy potrzebowali dzielnych piratów do obrony naszych wysp!"
+ pir_create_anti_air:0 "Zbuduj Działa Przeciwlotnicze"
+  pir_create_anti_air_desc:0 "Te samoloty już mnie wkurwiają!"
