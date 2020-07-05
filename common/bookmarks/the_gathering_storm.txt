@@ -156,8 +156,10 @@ bookmarks = {
 			history = "PIR_GATHERING_STORM_DESC"
 			ideology = neutrality
 			ideas = {
+				Pirate_Life
 			}
 			focuses = {
+				
 			}	
 		}
 

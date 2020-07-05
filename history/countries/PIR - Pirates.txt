@@ -97,6 +97,7 @@ add_ideas = {
 	closed_economy
 	extensive_conscription
 	war_economy
+	Pirate_Life
 }
 
 create_country_leader = {

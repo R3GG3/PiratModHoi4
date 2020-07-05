@@ -1,0 +1,28 @@
+###########################
+# Pirate Events
+###########################
+
+add_namespace = pirate
+
+news_event = {
+	id = pirate.1
+	title = pirate.1.t
+	desc = pirate.1.d
+	picture = GFX_welcome
+	
+	is_triggered_only = no
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PIR
+		AND = {
+			date > 1936.1.1
+		}
+	}
+	
+	
+	option = {
+		name = pirate.1.a
+		ai_chance = { factor = 100 }
+	}
+}

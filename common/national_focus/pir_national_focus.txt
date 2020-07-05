@@ -35,7 +35,7 @@ focus_tree = {
 		icon = GFX_goal_generic_position_armies
 		x = 30
 		y = 0
-		cost = 1
+		cost = 30
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		available_if_capitulated = yes
 
@@ -182,7 +182,7 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_naval_dockyard
 		x = 5
 		y = 1
-		cost = 1
+		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {focus = PIR_settle_island}
 		
@@ -270,7 +270,7 @@ focus_tree = {
 		icon = GFX_goal_generic_CAS
 		x = 10
 		y = 2
-		cost = 1
+		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {focus = pir_defense}
 		
@@ -278,18 +278,23 @@ focus_tree = {
 
 		completion_reward = {
 			318 = {
-			set_building_level = {
-				type = plots
-				level = 10
-				province = {
-					all_provinces = yes
+				set_building_level = {
+					type = anti_air_building
+					level = 10
+					province = {
+						all_provinces = yes
+					}
 				}
 			}
 			
-			}
-			
 			319 = {
-			
+				set_building_level = {
+					type = anti_air_building
+					level = 10
+					province = {
+						all_provinces = yes
+					}
+				}
 			
 			}
 		}
@@ -301,7 +306,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_sphere
 		x = 12
 		y = 2
-		cost = 1
+		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
 		prerequisite = {focus = pir_defense}
 		

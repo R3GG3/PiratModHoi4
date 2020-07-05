@@ -1,9 +1,9 @@
 ﻿units = {
 
 	######## NAVAL OOB ########
-	fleet = {
-		name = "Flota Piracka"
-		naval_base = 4641 
+#	fleet = {
+#		name = "Flota Piracka"
+#		naval_base = 4641 
 #		task_force = {				
 #			name = "Piracka Dywizja Niszczycieli"
 #			location = 4641
@@ -33,10 +33,10 @@
 #			ship = { name = "Submarine" definition = submarine equipment = { submarine_1 = { amount = 1 owner = PIR } } }
 #		}
 #		
-		task_force = {
-			name = "Piracka Dywizja Krążowników"
-			location = 7660
-			ship = { name = "Queen's Anne Revenge" definition = battleship equipment = { battleship_1 = { amount = 1 owner = PIR } } }
+#		task_force = {
+#			name = "Piracka Dywizja Krążowników"
+#			location = 7660
+#			ship = { name = "Queen's Anne Revenge" definition = battleship equipment = { battleship_1 = { amount = 1 owner = PIR } } }
 #			ship = { name = "Royal Fortune" definition = battleship equipment = { battleship_1 = { amount = 1 owner = PIR } } }
 #			ship = { name = "Battleship" definition = battleship equipment = { battleship_1 = { amount = 1 owner = PIR } } }	
 #			ship = { name = "Battleship" definition = battleship equipment = { battleship_1 = { amount = 1 owner = PIR } } }	
@@ -44,6 +44,6 @@
 #			ship = { name = "Battleship" definition = battleship equipment = { battleship_1 = { amount = 1 owner = PIR } } }	
 #			ship = { name = "Battleship" definition = battleship equipment = { battleship_1 = { amount = 1 owner = PIR } } }	
 #			ship = { name = "Battleship" definition = battleship equipment = { battleship_1 = { amount = 1 owner = PIR } } }	
-		}
+#		}
 	}
 }
