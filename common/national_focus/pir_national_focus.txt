@@ -1,31 +1,979 @@
 ﻿focus_tree = {
 	id = pirate_focus
-	
 	country = {
 		factor = 0
-		
-		modifier{
+		modifier = {
 			add = 10
 			tag = PIR
 		}
 	}
-	
-	reset_on_civilwar = no
-
-	initial_show_position = {
-		focus = industrial_effort
+	#Focus for pir_navy_doc_3
+	focus = {
+		id = pir_navy_doc_3
+		icon = GFX_focus_generic_destroyer
+		x = 38
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_navy_3 
+			focus = pir_navy_4 
+			focus = pir_navy_5 
+		}
+		mutually_exclusive = { 
+			focus = pir_navy_doc_2 
+		}
+		mutually_exclusive = { 
+			focus = pir_navy_doc_1 
+		}
+		mutually_exclusive = { 
+			focus =  
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    bonus = 1.0
+    uses = 1
+    category = cat_base_strike
+}
+		}
 	}
-	###POLITICAL###
+	#Focus for pir_nuclear
+	focus = {
+		id = pir_nuclear
+		icon = GFX_focus_wonderweapons
+		x = 13
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_attack_uk_ship
+		}
+		prerequisite = { 
+			focus = pir_steals_fra_art
+		}
+		prerequisite = { 
+			focus = pir_build_ironworks
+			focus = pir_search_gold
+			focus = pir_industrial_civ_2
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    bonus = 2.0
+    uses = 1
+    category = nuclear
+}
+		}
+	}
+	#Focus for pir_navy_doc_2
+	focus = {
+		id = pir_navy_doc_2
+		icon = GFX_focus_generic_navy_battleship2
+		x = 35
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_navy_3 
+			focus = pir_navy_4 
+			focus = pir_navy_5 
+		}
+		mutually_exclusive = { 
+			focus = pir_navy_doc_1 
+		}
+		mutually_exclusive = { 
+			focus = pir_navy_doc_3 
+		}
+		mutually_exclusive = { 
+			focus =  
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    bonus = 1.0
+    uses = 1
+    category = cat_trade_interdiction
+}
+		}
+	}
+	#Focus for pir_navy_doc_1
+	focus = {
+		id = pir_navy_doc_1
+		icon = GFX_goal_continuous_naval_production
+		x = 32
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_navy_3 
+			focus = pir_navy_4 
+			focus = pir_navy_5 
+		}
+		mutually_exclusive = { 
+			focus = pir_navy_doc_2 
+		}
+		mutually_exclusive = { 
+			focus = pir_navy_doc_1 
+		}
+		mutually_exclusive = { 
+			focus =  
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    bonus = 1.0
+    uses = 1
+    category = cat_fleet_in_being
+}
+		}
+	}
+	#Focus for pir_use_USA_tech
+	focus = {
+		id = pir_use_usa_tech
+		icon = GFX_focus_research2
+		x = 3
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = pir_army_2 }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for pir_defense
+	focus = {
+		id = pir_defense
+		icon = GFX_goal_generic_defence
+		x = 31
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PIR_settle_island }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_war= yes
+		}
+		completion_reward = {
+			318 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = {all_provinces = yes}
+				}
+			
+			}
+			
+			319 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					instant_build = yes
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					
+					}
+				}
+			
+			}
+		}
+	}
+	#Focus for pir_steals_fra_art
+	focus = {
+		id = pir_steals_fra_art
+		icon = GFX_goal_generic_army_artillery2
+		x = 8
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_intestred_tech 
+		}
+		prerequisite = { 
+			focus = pir_use_usa_tech 
+		}
+		mutually_exclusive = { focus = pir_attack_uk_ship }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for pir_steals_AT
+	focus = {
+		id = pir_steals_at
+		icon = GFX_goal_generic_army_artillery2
+		x = 2
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_use_usa_tech 
+		}
+		prerequisite = { 
+			focus = pir_intestred_tech 
+		}
+		mutually_exclusive = { focus = pir_steals_sov_tanks }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for pir_rocket
+	focus = {
+		id = pir_rocket
+		icon = GFX_focus_rocketry
+		x = 10
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_attack_uk_ship
+		}
+		prerequisite = { 
+			focus = pir_steals_fra_art
+		}
+		prerequisite = { 
+			focus = pir_build_ironworks
+			focus = pir_search_gold
+			focus = pir_industrial_civ_2
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    bonus = 2.0
+    uses = 1
+    category = rocketry
+}
+		}
+	}
+	#Focus for pir_steals_sov_tanks
+	focus = {
+		id = pir_steals_sov_tanks
+		icon = GFX_focus_generic_license_production
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_use_usa_tech 
+		}
+		prerequisite = { 
+			focus = pir_intestred_tech 
+		}
+		mutually_exclusive = { focus = pir_steals_at }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for pir_navy_prod
+	focus = {
+		id = pir_navy_prod
+		icon = GFX_goal_generic_navy_doctrines_tactics
+		x = 44
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_navy_doc_1 
+			focus = pir_navy_doc_2 
+			focus = pir_navy_doc_3 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			equipment = {
+        type = naval_equipment
+    cost_factor = -40
+}
+		}
+	}
+	#Focus for pir_industrial_civ_2
+	focus = {
+		id = pir_industrial_civ_2
+		icon = GFX_focus_generic_industry_3
+		x = 15
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_capital 
+		}
+		prerequisite = { 
+			focus = pir_build_rail 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			XXX = {
+				 add_extra_state_shared_building_slots = X
+				 add_building_construction = {
+					 type = industrial_complex
+					 level = X
+					 instant_build = yes
+					 province = {all_provinces = yes}
+				 }
+
+			}
+		}
+	}
+	#Focus for pir_build_ironworks
+	focus = {
+		id = pir_build_ironworks
+		icon = GFX_focus_generic_steel
+		x = 11
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_build_rail 
+		}
+		prerequisite = { 
+			focus = pir_capital 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+    type = steel
+    amount = XXX
+    state = XXX
+}
+		}
+	}
+	#Focus for pir_search_gold
+	focus = {
+		id = pir_search_gold
+		icon = GFX_goal_generic_oil_refinery
+		x = 13
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_build_rail 
+		}
+		prerequisite = { 
+			focus = pir_capital 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_resource = {
+    type = oil
+    amount = XXX
+    state = XXX
+}
+		}
+	}
+	#Focus for pir_capital
+	focus = {
+		id = pir_capital
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 15
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_ship_attack 
+			focus = pir_trade 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			XXX = {
+				 add_extra_state_shared_building_slots = 3
+				 }
+		}
+	}
+	#Focus for pir_build_rail
+	focus = {
+		id = pir_build_rail
+		icon = GFX_goal_generic_construct_infrastructure
+		x = 11
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_ship_attack 
+			focus = pir_trade 
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			XXX = {
+				add_building_construction = {
+					type = infrastructure
+					level = 3
+					instant_build = yes
+				}
+		}
+	}
+} #This may not be in the right place. If your focus tree is having issues, check the above focus, as this closing brace was added to close the focus.
+	#Focus for pir_intestred_tech
+	focus = {
+		id = pir_intestred_tech
+		icon = GFX_focus_research2
+		x = 5
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_steals_guns 
+			focus = pir_bought_guns 
+			focus = pir_army_2 
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_research_slot= 1
+		}
+	}
+	#Focus for pir_trade
+	focus = {
+		id = pir_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 11
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = pir_industrial_civ_1 }
+		mutually_exclusive = { focus = pir_ship_attack }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for pir_create_national_guard
+	focus = {
+		id = pir_create_national_guard
+		icon = GFX_goal_generic_military_sphere
+		x = 31
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = pir_create_anti_air }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			division_template = {
+				name = "Piracka Gwardia"
+
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }	
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 2 y = 0 }	
+					infantry = { x = 2 y = 1 }	
+					infantry = { x = 2 y = 2 }	
+					infantry = { x = 3 y = 0 }	
+					infantry = { x = 3 y = 1 }	
+					infantry = { x = 3 y = 2 }	
+				}
+				support = {
+					recon = { x = 0 y = 0 }
+					artillery = { x = 0 y = 1 }
+					engineer = { x = 0 y = 2 }
+				}
+			}
+			318 = {
+				create_unit = {
+					division = 'division_template = "Piracka Gwardia" start_experience_factor = 0.3'
+					owner = ROOT
+				}
+			}
+		}
+	}
+	#Focus for pir_ship_attack
+	focus = {
+		id = pir_ship_attack
+		icon = GFX_goal_generic_navy_anti_submarine
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = pir_industrial_civ_1 }
+		mutually_exclusive = { focus = pir_trade }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for pir_create_anti_air
+	focus = {
+		id = pir_create_anti_air
+		icon = GFX_goal_generic_CAS
+		x = 31
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = pir_defense }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			318 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 10
+					province = {
+						all_provinces = yes
+					}
+				}
+			}
+			
+			319 = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 10
+					province = {
+						all_provinces = yes
+					}
+				}
+			
+			}
+		}
+	}
+	#Focus for pir_navy_3
+	focus = {
+		id = pir_navy_3
+		icon = GFX_goal_generic_navy_battleship
+		x = 32
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = pir_navy_2 }
+		mutually_exclusive = { focus = pir_navy_4 }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    bonus = 1.0
+    uses = 1
+    category = shbb_tech
+}
+add_tech_bonus = {
+    bonus = 1.0
+    uses = 1
+    category = bb_tech
+}
+		}
+	}
+	#Focus for pir_navy_4
+	focus = {
+		id = pir_navy_4
+		icon = GFX_goal_generic_amphibious_assault
+		x = 35
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = pir_navy_2 }
+		mutually_exclusive = { focus = pir_navy_3 }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    bonus = 1.0
+    uses = 1
+    category = dd_tech
+}
+add_tech_bonus = {
+    bonus = 1.0
+    uses = 1
+    category = cl_tech
+}
+		}
+	}
+	#Focus for pir_navy_1
+	focus = {
+		id = pir_navy_1
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 35
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = pir_navy }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			318 = {
+					add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+					province = 4641
+				}
+			
+			}
+		}
+	}
+	#Focus for pir_navy_2
+	focus = {
+		id = pir_navy_2
+		icon = GFX_goal_generic_construct_naval_dockyard
+		x = 35
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = pir_navy_1 }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			686 = {
+				add_extra_state_shared_building_slots = 5
+					add_building_construction = {
+					type = dockyard
+					level = 5
+					instant_build = yes
+					province = 4641
+				}
+					
+				add_building_construction = {
+					type = naval_base
+					level = 4
+					instant_build = yes
+					province = 1440
+				}
+			}
+		}
+	}
+	#Focus for pir_army
+	focus = {
+		id = pir_army
+		icon = GFX_goal_generic_axis_build_infantry
+		x = 2
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PIR_settle_island }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 2.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+	#Focus for pir_army_1
+	focus = {
+		id = pir_army_1
+		icon = GFX_goal_generic_small_arms
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = pir_army }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    bonus = 1.0
+    uses = 1
+    category = motorized_equipment
+}
+		}
+	}
+	#Focus for pir_army_2
+	focus = {
+		id = pir_army_2
+		icon = GFX_goal_generic_wolf_pack
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = pir_army_1 }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    bonus = 1.0
+    uses = 1
+    category = support_tech
+}
+		}
+	}
+	#Focus for pir_navy
+	focus = {
+		id = pir_navy
+		icon = GFX_goal_generic_build_navy
+		x = 35
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = pir_settle_island }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			318 = {
+					add_building_construction = {
+					type = naval_base
+					level = 8
+					instant_build = yes
+					province = 4641
+				}
+			
+			}
+		}
+	}
+	#Focus for break_monroe
+	focus = {
+		id = break_monroe
+		icon = GFX_goal_generic_position_armies
+		x = 22
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PIR_form_goverment }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for usa_civil_war
+	focus = {
+		id = usa_civil_war
+		icon = GFX_goal_generic_army_doctrines
+		x = 22
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = break_monroe }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for cuba_war
+	focus = {
+		id = cuba_war
+		icon = GFX_goal_generic_major_war
+		x = 25
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = break_monroe }
+		mutually_exclusive = { focus = cuba_ally }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for talk_to_stalin
+	focus = {
+		id = talk_to_stalin
+		icon = GFX_goal_support_communism
+		x = 27
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = go_communism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for war_with_reich
+	focus = {
+		id = war_with_reich
+		icon = GFX_focus_attack_germany
+		x = 27
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = talk_to_stalin }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_threat = 30
+
+			declare_war_on = {
+				target = GER
+				type = annex_everything
+			}
+
+			add_to_war = { 
+				targeted_alliance = SOV
+				enemy = GER
+				hostility_reason = asked_to_join
+			}
+		}
+	}
+	#Focus for go_fascism
+	focus = {
+		id = go_fascism
+		icon = GFX_goal_support_fascism
+		x = 17
+		y = 2
+		cost = 13
+		available_if_capitulated = yes
+		prerequisite = { focus = PIR_form_goverment }
+		mutually_exclusive = { focus = go_communism }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics = {ruling_party = fascism}
+			add_popularity = {
+				ideology = fascism
+				popularity = 1.0
+			}
+		}
+	}
+	#Focus for talk_to_hitler
+	focus = {
+		id = talk_to_hitler
+		icon = GFX_goal_support_fascism
+		x = 17
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = go_fascism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Focus for war_with_ussr
+	focus = {
+		id = war_with_ussr
+		icon = GFX_goal_generic_war_with_comintern
+		x = 17
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = talk_to_hitler }
+		search_filters = { FOCUS_FILTER_ANNEXATION } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_threat = 30
+
+			declare_war_on = {
+				target = SOV
+				type = annex_everything
+			}
+
+			add_to_war = { 
+				targeted_alliance = GER
+				enemy = SOV
+				hostility_reason = asked_to_join
+			}
+		}
+	}
+	#Focus for go_communism
+	focus = {
+		id = go_communism
+		icon = GFX_goal_support_communism
+		x = 27
+		y = 2
+		cost = 13
+		available_if_capitulated = yes
+		prerequisite = { focus = PIR_form_goverment }
+		mutually_exclusive = { focus = go_fascism }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics = {ruling_party = communism}
+			add_popularity = {
+				ideology = communism
+				popularity = 1.0
+			}
+		}
+	}
+	#Focus for form_goverment
+	focus = {
+		id = PIR_form_goverment
+		icon = GFX_focus_generic_self_management
+		x = 22
+		y = 1
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = PIR_settle_island }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	#Focus for settle_island
 	focus = {
 		id = PIR_settle_island
 		icon = GFX_focus_hol_prepare_the_inundation_lines
-		x = 30
+		x = 19
 		y = 0
-		cost = 30
-		search_filters = {  FOCUS_FILTER_RESEARCH }
+		cost = 15
 		available_if_capitulated = yes
-
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
+			completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 3000
@@ -82,443 +1030,62 @@
 			
 			add_manpower = 1000000
 		}
-	}
-
-	focus = {
-		id = PIR_form_goverment
-		icon = GFX_focus_generic_self_management
-		x = 30
-		y = 1
-		cost = 20
-		prerequisite = {focus = PIR_settle_island}
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_political_power = 300
 		}
 	}
-	
-	focus = {
-		id = go_fascism
-		icon = GFX_goal_support_fascism
-		mutually_exclusive = {focus = go_communism}
-		prerequisite = {focus = PIR_form_goverment}
-		x = 20
-		y = 2
-		cost = 13
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			set_politics = {ruling_party = fascism}
-			add_popularity = {
-				ideology = fascism
-				popularity = 1.0
-			}
-		}
-	}
-	
-	focus = {
-		id = talk_to_hitler
-		icon = GFX_goal_support_fascism
-		prerequisite = {focus = go_fascism}
-		x = 20
-		y = 3
-		cost = 1
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-			
-		}
-	}
-
-	focus = {
-		id = war_with_ussr
-		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = {focus = talk_to_hitler}
-		x = 20
-		y = 4
-		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-			add_threat = 30
-
-			declare_war_on = {
-				target = SOV
-				type = annex_everything
-			}
-
-			add_to_war = { 
-				targeted_alliance = GER
-				enemy = SOV
-				hostility_reason = asked_to_join
-			}
-		}
-	}
-	
-	
-	focus = {
-		id = go_communism
-		icon = GFX_goal_support_communism
-		mutually_exclusive = {focus = go_fascism}
-		prerequisite = {focus = PIR_form_goverment}
-		x = 40
-		y = 2
-		cost = 13
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			set_politics = {ruling_party = communism}
-			add_popularity = {
-				ideology = communism
-				popularity = 1.0
-			}
-		}
-	}
-
-	focus = {
-		id = talk_to_stalin
-		icon = GFX_goal_support_communism
-		prerequisite = {focus = go_communism}
-		x = 40
-		y = 3
-		cost = 1
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-			}
-		
-	}
-
-	focus = {
-		id = war_with_reich
-		icon = GFX_focus_attack_germany
-		prerequisite = {focus = talk_to_stalin}
-		x = 40
-		y = 4
-		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-			add_threat = 30
-
-			declare_war_on = {
-				target = GER
-				type = annex_everything
-			}
-
-			add_to_war = { 
-				targeted_alliance = SOV
-				enemy = GER
-				hostility_reason = asked_to_join
-			}
-		}
-	}
-
-	focus = {
-		id = break_monroe
-		icon = GFX_goal_generic_position_armies
-		prerequisite = {focus = PIR_form_goverment}
-		x = 30
-		y = 3
-		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-
-		}
-	}
-
-	focus = {
-		id = usa_civil_war
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = {focus = break_monroe}
-		x = 33
-		y = 4
-		cost = 20
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			USA = {
-				start_civil_war = {
-					ruling_party = democratic
-					ideology = ROOT
-					size = 0.4
-					capital = 366
-					states = { 
-						366 365
-					}
-				}
-
-				news_event = event_usa_civil_war.1
-
-			}
-		}
-	}
-	
+	#Focus for cuba_ally
 	focus = {
 		id = cuba_ally
 		icon = GFX_goal_generic_major_alliance
-		prerequisite = {focus = break_monroe}
-		mutually_exclusive = {focus = cuba_war}
-		x = 25
+		x = 19
 		y = 4
-		cost = 20
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = cuba_war
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = {focus = break_monroe}
-		mutually_exclusive = {focus = cuba_ally}
-		x = 27
-		y = 4
-		cost = 20
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-		}
-	}
-
-###ARMY###
-	focus = {
-		id = pir_army
-		icon = GFX_goal_generic_allies_build_infantry
-		x = 2
-		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = PIR_settle_island}
-		
 		available_if_capitulated = yes
-
-		completion_reward = {
-
-			add_tech_bonus = {
-				bonus = 2.0
-				uses = 1
-				category = land_doctrine
-			}
+		prerequisite = { focus = break_monroe }
+		search_filters = { FOCUS_FILTER_POLITICAL } 
+		ai_will_do = {
+			factor = 1
 		}
 	}
-
-	focus = {
-		id = pir_army_1
-		icon = GFX_goal_generic_political_pressure
-		x = 2
-		y = 2
-		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = pir_army}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-			id = pir_army_2
-			icon = GFX_goal_generic_wolf_pack
-			x = 2
-			y = 3
-			cost = 10
-			search_filters = {  FOCUS_FILTER_RESEARCH }
-			prerequisite = {focus = pir_army_1}
-			
-			available_if_capitulated = yes
-
-			completion_reward = {
-
-			}
-	}
-	
-	###NAVY###
-	focus = {
-		id = pir_navy
-		icon = GFX_goal_generic_build_navy
-		x = 5
-		y = 1
-		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = PIR_settle_island}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-			318 = {
-					add_building_construction = {
-					type = naval_base
-					level = 8
-					instant_build = yes
-					province = 4641
-				}
-			
-			}
-		}
-	}
-
-	focus = {
-		id = pir_navy_1
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 5
-		y = 2
-		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = pir_navy}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-			318 = {
-					add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
-					province = 4641
-				}
-			
-			}
-		}
-	}
-
-
-	focus = {
-		id = pir_navy_2
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 5
-		y = 2
-		cost = 20
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = pir_navy_1}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-			686 = {
-				add_extra_state_shared_building_slots = 5
-					add_building_construction = {
-					type = dockyard
-					level = 5
-					instant_build = yes
-					province = 4641
-				}
-					
-				add_building_construction = {
-					type = naval_base
-					level = 4
-					instant_build = yes
-					province = 1440
-				}
-			}	
-		}
-	}
-
-	focus = {
-		id = pir_navy_3
-		icon = GFX_goal_generic_navy_battleship
-		x = 5
-		y = 3
-		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = pir_navy_2}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-		}
-			
-	}
-
-	focus = {
-		id = pir_navy_4
-		icon = GFX_goal_generic_amphibious_assault
-		x = 5
-		y = 4
-		cost = 3
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = pir_navy_3}
-		
-		available_if_capitulated = yes
-
-		completion_reward = {
-			
-		}
-			
-	}
-	
-
-	###INDUSTRIAL###
+	#Focus for pir_industrial
 	focus = {
 		id = pir_industrial
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 8
+		x = 10
 		y = 1
 		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = PIR_settle_island}
-		
 		available_if_capitulated = yes
-
+		prerequisite = { focus = pir_settle_island }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
-			
 			add_tech_bonus = {
-				bonus = 2.0
+				bonus = 1.0
 				uses = 1
 				category = industry
 			}
+
+add_tech_bonus = {
+    bonus = 1.0
+    uses = 1
+    category = electronics
+}
 		}
 	}
-
+	#Focus for pir_industrial_civ_1
 	focus = {
 		id = pir_industrial_civ_1
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 8
+		x = 13
 		y = 2
 		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = pir_industrial}
-		
 		available_if_capitulated = yes
-
+		prerequisite = { focus = pir_industrial }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
 			318 = {
 				 add_extra_state_shared_building_slots = 5
@@ -532,18 +1099,19 @@
 			}
 		}
 	}
-
+	#Focus for pir_industrial_arm_1
 	focus = {
 		id = pir_industrial_arm_1
 		icon = GFX_goal_generic_construct_mil_factory
-		x = 8
-		y = 3
+		x = 7
+		y = 2
 		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = pir_industrial_civ_1}
-		
 		available_if_capitulated = yes
-
+		prerequisite = { focus = pir_industrial }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
+		}
 		completion_reward = {
 			319 = {
 				 add_extra_state_shared_building_slots = 3
@@ -557,123 +1125,89 @@
 			}
 		}
 	}
-
-	###DEFENSE###
+	#Focus for pir_steals_guns
 	focus = {
-		id = pir_defense
-		icon = GFX_goal_generic_defence
-		x = 11
-		y = 1
+		id = pir_steals_guns
+		icon = GFX_focus_prc_infiltration
+		x = 5
+		y = 3
 		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = PIR_settle_island}
-		
 		available_if_capitulated = yes
-
-		completion_reward = {
-
-			318 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 3
-					instant_build = yes
-					province = {all_provinces = yes}
-				}
-			
-			}
-			
-			319 = {
-				add_building_construction = {
-					type = coastal_bunker
-					level = 3
-					instant_build = yes
-					province = {
-						all_provinces = yes
-						limit_to_coastal = yes
-					
-					}
-				}
-			
-			}
+		prerequisite = { focus = pir_industrial_arm_1 }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
 		}
 	}
-	
-	
+	#Focus for pir_bought_guns
 	focus = {
-		id = pir_create_anti_air
-		icon = GFX_goal_generic_CAS
-		x = 10
-		y = 2
+		id = pir_bought_guns
+		icon = GFX_goal_generic_improve_relations
+		x = 9
+		y = 3
 		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = pir_defense}
-		
 		available_if_capitulated = yes
-
-		completion_reward = {
-			318 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 10
-					province = {
-						all_provinces = yes
-					}
-				}
-			}
-			
-			319 = {
-				add_building_construction = {
-					type = anti_air_building
-					level = 10
-					province = {
-						all_provinces = yes
-					}
-				}
-			
-			}
+		prerequisite = { focus = pir_industrial_arm_1 }
+		mutually_exclusive = { focus = pir_steals_guns }
+		search_filters = { FOCUS_FILTER_INDUSTRY } 
+		ai_will_do = {
+			factor = 1
 		}
 	}
-	
-	
+	#Focus for pir_navy_5
 	focus = {
-		id = pir_create_national_guard
-		icon = GFX_goal_generic_military_sphere
-		x = 12
-		y = 2
+		id = pir_navy_5
+		icon = GFX_goal_generic_navy_submarine
+		x = 38
+		y = 4
 		cost = 10
-		search_filters = {  FOCUS_FILTER_RESEARCH }
-		prerequisite = {focus = pir_defense}
-		
 		available_if_capitulated = yes
-
-		completion_reward = {
-			division_template = {
-				name = "Piracka Gwardia"
-
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }	
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 2 y = 0 }	
-					infantry = { x = 2 y = 1 }	
-					infantry = { x = 2 y = 2 }	
-					infantry = { x = 3 y = 0 }	
-					infantry = { x = 3 y = 1 }	
-					infantry = { x = 3 y = 2 }	
-				}
-				support = {
-					recon = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1 }
-					engineer = { x = 0 y = 2 }
-				}
-			}
-			318 = {
-				create_unit = {
-					division = 'division_template = "Piracka Gwardia" start_experience_factor = 0.3'
-					owner = ROOT
-				}
-			}
+		prerequisite = { focus = pir_navy_2 }
+		mutually_exclusive = { 
+			focus = pir_navy_3 
 		}
+		mutually_exclusive = { 
+			focus = pir_navy_4 
+		}
+		mutually_exclusive = { 
+			focus =  
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_tech_bonus = {
+    bonus = 1.0
+    uses = 1
+    category = ss_tech
+}
+add_tech_bonus = {
+    bonus = 1.0
+    uses = 1
+    category = ca_tech
+}
+		}
+	}
+	#Focus for pir_attack_UK_ship
+	focus = {
+		id = pir_attack_uk_ship
+		icon = GFX_goal_generic_navy_carrier
+		x = 0
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = pir_use_usa_tech 
+		}
+		prerequisite = { 
+			focus = pir_intestred_tech 
+		}
+		mutually_exclusive = { focus = pir_steals_fra_art }
+		search_filters = { FOCUS_FILTER_RESEARCH } 
+		ai_will_do = {
+			factor = 1
+		}
+	}
+#End of focuses 
+ }
