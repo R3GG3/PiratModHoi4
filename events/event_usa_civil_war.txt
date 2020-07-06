@@ -1,0 +1,16 @@
+###########################
+# USA CIVIL WAR
+###########################
+
+add_namespace = event_usa_civil_war
+
+news_event = {
+	id = event_usa_civil_war.1
+	title = event_usa_civil_war.1.t
+	desc = event_usa_civil_war.1.d
+	picture = GFX_event_usa_civil_war
+
+	is_triggered_only = yes
+
+	option{name = "OK"}
+}

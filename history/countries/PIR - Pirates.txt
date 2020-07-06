@@ -190,3 +190,73 @@ create_corps_commander = {
 	planning_skill = 3
 	logistics_skill = 3
 }
+
+###NAVY###
+create_navy_leader = {
+	name = "Edward Teach"
+		picture = "Portrait_USA_Earnest_King.dds"
+	traits = { navy_career_officer aviation_enthusiast caustic_personality blockade_runner superior_tactician }
+	skill = 5
+	attack_skill = 4
+	defense_skill = 3
+	maneuvering_skill = 3
+	coordination_skill = 6
+}
+
+create_navy_leader = {
+	name = "Edward Teach"
+	picture = "Portrait_Edward_Teach.dds"
+	traits = { }
+	skill = 5
+	attack_skill = 5
+    defense_skill = 5
+    maneuvering_skill = 5
+	coordination_skill = 6
+}
+
+create_navy_leader = {
+	name = "Calico Jack"
+	picture = "Portrait_Calico_Jack.dds"
+	traits = { }
+	skill = 3
+	attack_skill = 3
+    defense_skill = 6
+    maneuvering_skill = 4
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Charles Vane"
+	picture = "Portrait_Charles_Vane.dds"
+	traits = { armor_officer career_officer }
+	skill = 4
+
+	attack_skill = 6
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 4
+}
+
+create_navy_leader = {
+	name = "Henry Avery"
+	picture = "Portrait_Henry_Avery.dds"
+	traits = { armor_officer career_officer }
+	skill = 5
+
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 6
+}
+
+create_navy_leader = {
+	name = "William Kidd"
+	picture = "Portrait_William_Kidd.dds"
+	traits = {  }
+	skill = 3
+
+	attack_skill = 4
+	defense_skill = 4
+	maneuvering_skill = 3
+	coordination_skill = 4
+}

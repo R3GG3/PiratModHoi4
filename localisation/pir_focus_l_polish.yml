@@ -4,10 +4,29 @@
  PIR_settle_island_desc:0 "Musimy zbudować podstawowe rzeczy, zanim zrobimy coś innego!"
  PIR_form_goverment:0 "Formowanie Rządu"
  PIR_form_goverment_desc:0 "Piraci ustanawiają własny rząd, aby obronić się przed Imperlialistyczną Cywilizacją."
+ 
  go_fascism:0 "Piraci Najlepsi!"
  go_fascism_desc:0 "Hitler może pierdolić, że Niemcy są najlepsze, ale to my królujemy na morzu!"
+ talk_to_hitler:0 "Zawrzyj Pakt z Hitlerem"
+ talk_to_hitler_desc:0 "Może i ten dyktator to debil, ale warto się dogadać!"
+ war_with_ussr:0 "Wojna z ZSRR"
+ war_with_ussr_desc:0 "Wspólnie z Rzeszą zgarniemy niesamowite łupy w tym całym ZSRR!"
+ 
  go_communism:0 "Wspólnie Zwyciężymy!"
  go_communism_desc:0 "Wszyscy Kamraci uważają, że Stalin ma trochę racji, w tym, że trzeba się dzielić Arrrr!"
+ talk_to_stalin:0 "Zawrzyj Pakt z Stalinem"
+ talk_to_stalin_desc:0 "Podoba mi się tok myślenia towarzysza Stalina haha!"
+ war_with_reich:0 "Wojna z Rzeszą"
+ war_with_reoch_desc:0 "Towarzysz Stalin ma rację, a i łup będzie dobry, do boju!"
+ 
+ break_monroe:0 "Zniszcz Doktrynę Monroe'a"
+ break_monroe_desc:0 "Wysepki wokół nas czują się za bezpiecznie, przekonajmy ich, że są w błędzie!"
+ usa_civil_war:0 "Podburzenie Ludu USA"
+ usa_civil_war_desc:0 "W ten sposób osłabimy Kolosa!"
+ cuba_ally:0 "Sojusz z Kubą"
+ cuba_ally_desc:0 "Jako, że obok nas jest Kuba, może zgodzi się dołączyć do naszej sprawy!"
+ cuba_war:0 "Wojna z Kubą"
+ cuba_war_desc:0 "Tereny jakie posiada Kuba mogą się nam przydać!"
  
  ###FASCIZM###
  
@@ -22,10 +41,29 @@
  ###[[ARMIES]]###
  pir_army:0 "Stworzenie Regularnej Armii"
  pir_army_desc:0 "Nasze Państwo potrzebuje armii, jeżeli mamy przetrwać!"
+ pir_army_1:0 "Rekrutacja Bukanierów"
+ pir_army_1_desc:0 "Czas wyszkolić jednostki, które będą dla nas walczyć!"
+ pir_army_2:0 "Tworzenie systemu szkolenia jednostek."
+ pir_army_2_desc:0 "Dzięki temu rekrutacja będzie sprawniejsza!"
+ 
  pir_navy:0 "Stworzenie Głównej Bazy Morskiej"
  pir_navy_desc:0 "Aby konkurować z wielkimi krajami, będzie nam potrzebna wielka flota, może nawet dwie!"
+ pir_navy_1:0 "Rozbudowa Stoczni"
+ pir_navy_1_desc:0 "Aby królować na morzu, musimy budować statki!"
+ pir_navy_2:0 "Wykorzystanie Puerto Rico."
+ pir_navy_2_desc:0 "Posiadamy nieużywaną wysepkę nieopodal, czas coś z nią zrobić!"
+ pir_navy_3:0 "Budowa Queen's Anne Revenge"
+ pir_navy_3_desc:0 "Czas zbudować statek, który będzie siał grozę w sercach wrogów!"
+ pir_navy_4:0 "Zebranie Piratów"
+ pir_navy_4_desc:0 "Czas zebrać piratów gotowych do ataku na wrogie tereny!"
+ 
  pir_industrial:0 "Tworzenie Plantacji"
  pir_industrial_desc:0 "Nie samą wojną człowiek żyje!"
+ pir_industrial_civ_1:0 "Budowa pierwszych fabryk"
+ pir_industrial_civ_1_desc:0 "Bez fabryk za długo nie pociągniemy!"
+ pir_industrial_arm_1:0 "Tworzenie Fabryk Zbrojeniowych"
+ pir_industrial_arm_1_desc:0 "Pirat bez broni, jak ryba bez wody."
+
  pir_defense:0 "Stworzenie Prowizorycznej Obrony"
  pir_defense_desc:0 "Musimy bronić się przed Cywilizacją!"
  pir_create_national_guard:0 "Sformułuj Gwardię Narodową"

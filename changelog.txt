@@ -1,0 +1,18 @@
+[05.07.2020]
++ stworzono podstawową strukturę
++ dodano flagę
++ przydzielono obszar
++ custom lider
++ custom marszałkowie i oficerowie
++ początek drzewka
++ zapoznana podstawowa wiedza
++ template podstawowych jednostek
++ custom main music
++ custom loading screen
++ custom idea/spirit
+
+-brak admirałów, kapitanów statków <>
+-nieskończone drzewko, oraz jeden focus nie działa poprawnie
+-balans dla państwa
+-brak eventów
+-dodać ducha narodowego, który obniża stabilizację i daje negatywną opinię o kraju <>

@@ -3232,3 +3232,8 @@
  pirate.1.t:0 "Witaj na Karaibach!"
  pirate.1.d:0 "Czołem Piracie, rozumiesz zasady hoi4, więc nie ma o czym pisać, baw się dobrze!"
  pirate.1.a:0 "Oczywiście!"
+
+ event_usa_civil_war.1.t:0 "Wojna domowa w USA"
+ event_usa_civil_war.1.d:0 "Piraci pokazali ludowi USA jak to jest być wolnym i nie musieć płacić podatków, słuchać się innych i żyć na ich utrzymaniu. Lud chcąc być wolnym narodem jak niegdyś powstał i jest gotów do walki z kolosem."
+
+ 

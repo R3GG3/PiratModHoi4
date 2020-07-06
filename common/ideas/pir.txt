@@ -8,18 +8,20 @@ country = {
 		allowed = {
 			always = yes
 		}
-		
-		picture = generic_pp_unity_bonus
 	
 		modifier = {
-			stability_weekly = 0.5
 			war_support_weekly = 0.5
 			special_forces_min = 100
 			surrender_limit = 1.0
 			weekly_manpower = 100
 			justify_war_goal_time = -1.0
 			conscription = 0.05
+			trade_opinion_factor = -0.25
+			send_volunteer_size = 24
+			army_morale_factor = 0.05
+			convoy_raiding_efficiency_factor = 0.25
+			naval_retreat_chance = 0.5
+			stability_factor = -0.5
 		}
 	}
-
 }
