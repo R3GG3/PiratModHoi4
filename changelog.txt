@@ -16,3 +16,7 @@
 -balans dla państwa
 -brak eventów
 -dodać ducha narodowego, który obniża stabilizację i daje negatywną opinię o kraju <>
+
+[06.07.2020]
++ dodano admirałów
++ znacznie usprawniono drzewko (nowe focusy, fix'y)

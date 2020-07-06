@@ -16,3 +16,14 @@ news_event = {
 
 	option{name = "OK"}
 }
+
+news_event = {
+	id = pirate.2
+	title = pirate.2.t
+	desc = pirate.2.d
+	picture = GFX_welcome
+
+	is_triggered_only = yes
+
+	option{name = "OK"}
+}

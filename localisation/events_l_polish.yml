@@ -3236,4 +3236,11 @@
  event_usa_civil_war.1.t:0 "Wojna domowa w USA"
  event_usa_civil_war.1.d:0 "Piraci pokazali ludowi USA jak to jest być wolnym i nie musieć płacić podatków, słuchać się innych i żyć na ich utrzymaniu. Lud chcąc być wolnym narodem jak niegdyś powstał i jest gotów do walki z kolosem."
 
- 
+ pir_cuba.1.t:0 "Zaproszenie Kuby do Frakcji"
+ pir_cuba.2.t:0 "Kuba zgodziła się na dołączenie do Frakcji."
+ pir_cuba.2.d:0 "Dnia dzisiejszego wyspy Kubu nieopodal Stanów Zjednoczonych zdecydowały dołączyć się do Bractwa Piratów jako ich sprzymierzeniec."
+ pir_cuba.3.t:0 "Kuba odmówiła dołączenia do Frakcji."
+ pir_cuba.3.d:0 "Zajebiemy was za to!"
+
+ pirates.2.t:0 "Zniszczenie Doktryny Monroe'a"
+ pirates.2.d:0 "Znana całemu świata doktryna Monroe'a została zniszczona. Chodzą słuchy, że to przez jednostki piratów, które zakładały bandery różnych państw tego sojuszu, aby skłócić je ze sobą. Oficjalnie nie znamy jednak przyczyny tego wydarzenia."

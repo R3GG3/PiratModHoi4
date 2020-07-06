@@ -1,0 +1,56 @@
+###########################
+# ACTION WITH CUBA
+###########################
+
+add_namespace = pir_cuba
+
+country_event = {
+	id = pir_cuba.1
+	title = pir_cuba.1.t
+	desc = pir_cuba.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = pir_cuba.1.a
+		ai_chance = { factor = 50 }
+		PIR = { 
+            add_to_faction = CUB
+            news_event = pir_cuba.2 
+        }
+	}
+
+	option = {
+		name = pir_cuba.1.b
+		ai_chance = { factor = 50 }
+        PIR = {
+            create_wargoal = {
+                type = puppet_wargoal_focus
+                target = CUB
+            }
+
+            news_event = pir_cuba.3
+        }
+	}
+}
+
+news_event = {
+    id = pir_cuba.2
+    title = pir_cuba.2.t
+    desc = pir_cuba.2.d
+
+    picture = GFX_news_event_001
+
+    is_triggered_only = yes
+
+    option = {name = "OK"}
+}
+
+country_event = {
+    id = pir_cuba.3
+    title = pir_cuba.3.t
+    desc = pir_cuba.3.d
+    is_triggered_only = yes
+
+    option = {name = "OK"}
+}

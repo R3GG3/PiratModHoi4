@@ -107,7 +107,6 @@ create_country_leader = {
 	expire = "2000.1.1"
 	ideology = nazism
 	traits = {
-		dictator
 	}
 }
 
@@ -118,7 +117,6 @@ create_country_leader = {
 	expire = "2000.1.1"
 	ideology = stalinism
 	traits = {
-		dictator
 	}
 }
 
@@ -129,7 +127,6 @@ create_country_leader = {
 	expire = "2000.1.1"
 	ideology = oligarchism
 	traits = {
-		dictator
 	}
 }
 
@@ -192,17 +189,6 @@ create_corps_commander = {
 }
 
 ###NAVY###
-create_navy_leader = {
-	name = "Edward Teach"
-		picture = "Portrait_USA_Earnest_King.dds"
-	traits = { navy_career_officer aviation_enthusiast caustic_personality blockade_runner superior_tactician }
-	skill = 5
-	attack_skill = 4
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 6
-}
-
 create_navy_leader = {
 	name = "Edward Teach"
 	picture = "Portrait_Edward_Teach.dds"

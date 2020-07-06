@@ -149,10 +149,16 @@
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = pir_army_2 }
+		prerequisite = { focus = pir_steals_guns OR = pir_bought_guns }
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			
+		}
+
 	}
 	#Focus for pir_defense
 	focus = {
@@ -205,7 +211,7 @@
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
-			focus = pir_intestred_tech 
+			focus = pir_kidnapp_usa_researcher 
 		}
 		prerequisite = { 
 			focus = pir_use_usa_tech 
@@ -228,7 +234,7 @@
 			focus = pir_use_usa_tech 
 		}
 		prerequisite = { 
-			focus = pir_intestred_tech 
+			focus = pir_kidnapp_usa_researcher 
 		}
 		mutually_exclusive = { focus = pir_steals_sov_tanks }
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -279,7 +285,7 @@
 			focus = pir_use_usa_tech 
 		}
 		prerequisite = { 
-			focus = pir_intestred_tech 
+			focus = pir_kidnapp_usa_researcher 
 		}
 		mutually_exclusive = { focus = pir_steals_at }
 		search_filters = { FOCUS_FILTER_RESEARCH } 
@@ -291,8 +297,8 @@
 	focus = {
 		id = pir_navy_prod
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 44
-		y = 0
+		x = 35
+		y = 6
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { 
@@ -441,19 +447,16 @@
 		}
 	}
 } #This may not be in the right place. If your focus tree is having issues, check the above focus, as this closing brace was added to close the focus.
-	#Focus for pir_intestred_tech
+	#Focus for pir_kidnapp_usa_researcher
 	focus = {
-		id = pir_intestred_tech
+		id = pir_kidnapp_usa_researcher
 		icon = GFX_focus_research2
 		x = 5
 		y = 4
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { 
-			focus = pir_steals_guns 
-			focus = pir_bought_guns 
-			focus = pir_army_2 
-		}
+		prerequisite = { focus = pir_army_2 }
+		prerequisite = {focus = pir_steals_guns OR = pir_bought_guns }
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 		ai_will_do = {
 			factor = 1
@@ -647,7 +650,6 @@ add_tech_bonus = {
 					type = dockyard
 					level = 5
 					instant_build = yes
-					province = 4641
 				}
 			
 			}
@@ -756,7 +758,7 @@ add_tech_bonus = {
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = pir_settle_island }
+		prerequisite = { focus = PIR_settle_island }
 		search_filters = { FOCUS_FILTER_INDUSTRY } 
 		ai_will_do = {
 			factor = 1
@@ -786,6 +788,129 @@ add_tech_bonus = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		completion_reward = {
+			USA = {
+					news_event = pirate.2 
+
+					diplomatic_relation = {
+						country = ARG
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = BOL
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = BRA
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = CAN
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = CHL
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = COL
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = ECU
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = COS
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = ELS
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = GUA
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = HON
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = MEX
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = NIC
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = PAN
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = PRU
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = URG
+						relation = guarantee
+						active = no
+					}
+
+					diplomatic_relation = {
+						country = VEN
+						relation = guarantee
+						active = no
+					}
+				
+
+					diplomatic_relation = {
+						country = PAR
+						relation = guarantee
+						active = no
+					}
+
+
+					diplomatic_relation = {
+						country = CUB
+						relation = guarantee
+						active = no
+					}
+
+			}
+		}
 	}
 	#Focus for usa_civil_war
 	focus = {
@@ -799,6 +924,21 @@ add_tech_bonus = {
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			news_event = event_usa_civil_war.1
+			USA = {
+				start_civil_war = {
+					ruling_party = democratic
+					ideology = ROOT
+					size = 0.4
+					capital = 366
+					states = { 
+						366 365 367 364 378 386
+					}
+				}
+			}
 		}
 	}
 	#Focus for cuba_war
@@ -973,7 +1113,6 @@ add_tech_bonus = {
 			factor = 1
 		}
 		completion_reward = {
-			completion_reward = {
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 3000
@@ -1030,7 +1169,6 @@ add_tech_bonus = {
 			
 			add_manpower = 1000000
 		}
-		}
 	}
 	#Focus for cuba_ally
 	focus = {
@@ -1041,9 +1179,16 @@ add_tech_bonus = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = break_monroe }
+		mutually_exclusive = { focus = cuba_war }
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			CUB = {
+				country_event = pir_cuba.1
+			}
 		}
 	}
 	#Focus for pir_industrial
@@ -1054,7 +1199,7 @@ add_tech_bonus = {
 		y = 1
 		cost = 10
 		available_if_capitulated = yes
-		prerequisite = { focus = pir_settle_island }
+		prerequisite = { focus = PIR_settle_island }
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 		ai_will_do = {
 			factor = 1
@@ -1134,6 +1279,7 @@ add_tech_bonus = {
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = pir_industrial_arm_1 }
+		mutually_exclusive = { focus = pir_kidnapp_usa_researcher }
 		search_filters = { FOCUS_FILTER_RESEARCH } 
 		ai_will_do = {
 			factor = 1
@@ -1201,7 +1347,7 @@ add_tech_bonus = {
 			focus = pir_use_usa_tech 
 		}
 		prerequisite = { 
-			focus = pir_intestred_tech 
+			focus = pir_kidnapp_usa_researcher 
 		}
 		mutually_exclusive = { focus = pir_steals_fra_art }
 		search_filters = { FOCUS_FILTER_RESEARCH } 
