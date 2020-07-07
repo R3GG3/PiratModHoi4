@@ -41,3 +41,36 @@ war_measures = {
 		}
 	}
 }
+
+PIR_attack_on_ships = {
+
+	PIR_attack_on_convoy = {
+		icon = generic_operation
+		cost = 100
+		days_re_enable = 50
+		country_event = pir_attack_on_ship.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	PIR_attack_on_fleet = {
+		icon = generic_operation
+		cost = 200
+		days_re_enable = 180
+		country_event = pir_attack_on_ship.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	PIR_attack_on_country_leader = {
+		icon = generic_operation
+		cost = 300
+		days_re_enable = 360
+		country_event = pir_attack_on_ship.3
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

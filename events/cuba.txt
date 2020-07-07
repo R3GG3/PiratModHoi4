@@ -13,7 +13,7 @@ country_event = {
 
 	option = {
 		name = pir_cuba.1.a
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 80 }
 		PIR = { 
             add_to_faction = CUB
             news_event = pir_cuba.2 
@@ -22,7 +22,7 @@ country_event = {
 
 	option = {
 		name = pir_cuba.1.b
-		ai_chance = { factor = 50 }
+		ai_chance = { factor = 20 }
         PIR = {
             create_wargoal = {
                 type = puppet_wargoal_focus

@@ -9,7 +9,7 @@ news_event = {
 	title = event_usa_civil_war.1.t
 	desc = event_usa_civil_war.1.d
 	picture = GFX_event_usa_civil_war
-
+	major = yes
 	is_triggered_only = yes
 
 	option{name = "OK"}
