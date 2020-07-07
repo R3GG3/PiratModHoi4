@@ -3247,3 +3247,8 @@
 
  pirate.2.t:0 "Zniszczenie Doktryny Monroe'a"
  pirate.2.d:0 "Znana całemu świata doktryna Monroe'a została zniszczona. Chodzą słuchy, że to przez jednostki piratów, które zakładały bandery różnych państw tego sojuszu, aby skłócić je ze sobą. Oficjalnie nie znamy jednak przyczyny tego wydarzenia."
+
+ pirate.3.t:0 "Kradzież Broni"
+ pirate.3.d:0 "Ty i twoja kompania podpłynęliście pod osłoną nocy do jednej z amerykańskich wysp. Przemierzając parę kilometrów napotkaliście cywila i udając, że jesteście zagubionymi żołnierzami amerykańskimi wskazał wam drogę magazynu wojskowego, znajdującego się nieopodal bazy militarnej. Kiedy już tam dotarliście okazało się, że wejścia do środka pilnuje dwóch żołnierzy, ale nie możecie sobie pozwolić na otwartą walkę, bo nie macie szans z całą bazą. Co robicie?"
+ pirate.3.a:0 "Spróbuję ich przekonać, że zostaliśmy wyznaczeni na następną wartę."
+ pirate.3.b:0 "Zdejmiemy ich po cichu."

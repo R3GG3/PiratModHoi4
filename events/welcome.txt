@@ -27,3 +27,224 @@ news_event = {
 
 	option{name = "OK"}
 }
+
+###STEALING A GUN EVENT###
+
+###TODO###
+- ADD EFFECTS
+- FIX PERCENTAGE
+- ADD POLISH TEXT AND TRANSLATE IT ONTO ENGLISH LATER
+
+#pirate.3 = arrive at destination, way of 'convince' soldiers near the gate
+#pirate.3.a = try to convince them, that you are next on watch
+#pirate.3.b = try to kill them silently
+
+#pirate.4 = you had lucky that actually today on watch there were 2 rookies, that didn't recognize all other soldiers from base, therefore you took all equipment, but also you have nothing to storage it in, what're u gonna do?
+#pirate.4.a = try to steal the truck
+#pirate.4.b = leave the truck, but beacuse of amount of these guns etc., you cannot take that all (- 20% equipment)
+
+#pirate.5 = you precisely stab the soldier who was rookie, by the way, and your mate did the same, you drag the bodies to bushes and open the gate with key that was in soldier's pocket.
+#pirate.4.a = same
+#pirate.4.b = same
+
+#pirate.6 (by truck | END) = you've stolen the truck successfully, and back on your ship with full equipment (100% equipment)
+#name = "Hurray!"
+
+#pirate.7 (on foot | END) = you went to your ship on foot with all the equipment, that you could carry (80% equipment)
+#name = "Anyway it was worth it!"
+
+#pirate.8 (ALARM) = suddenly a soldier sees your company and shout 'ALARM! INTRUDEERS!', all you can do, is run to forest, try to hide when they'll look for you, or run straight to ship
+#pirate.8.a = hide in forest
+#pirate.8.b = run to ship
+
+#pirate.9 (ALARM | END) = 
+#name = "we've got some part of that equipment at least"
+
+#pirate.10 (ALARM | END) =
+#name = 'shit! nothing good happened all this fucking day!'
+
+country_event = {
+	id = pirate.3
+	title = pirate.3.t
+	desc = pirate.3.d
+
+	is_triggered_only = yes
+
+	option{
+		name = "pirate.3.a"
+		random_list = {
+			49 = {
+				country_event = pirate.4
+			}
+
+			51 = {
+				###ALERT##
+				country_event = pirate.8
+			}
+		}
+	}
+
+	option{
+		name = "pirate.3.b"
+		60 = {
+			country_event = pirate.5
+		}
+
+		40 = {
+			###ALERT##
+			country_event = pirate.8
+		}
+	}
+}
+
+country_event = {
+	id = pirate.4
+	title = pirate.3.t
+	desc = pirate.4.d
+
+	is_triggered_only = yes
+
+	option{
+		name = "pirate.4.a"
+		random_list = {
+			50 = {
+				country_event = pirate.6
+			}
+
+			50 = {
+				###ALERT##
+				country_event = pirate.8
+			}
+		}
+	}
+
+	option{
+		name = "pirate.4.b"
+		80 = {
+			country_event = pirate.7
+		}
+
+		20 = {
+			###ALERT##
+			country_event = pirate.8
+		}
+	}
+
+}
+
+country_event = {
+	id = pirate.5
+	title = pirate.3.t
+	desc = pirate.5.d
+
+	is_triggered_only = yes
+
+	option{
+		name = "pirate.4.a"
+		random_list = {
+			50 = {
+				country_event = pirate.6
+			}
+
+			50 = {
+				###ALERT##
+				country_event = pirate.8
+			}
+		}
+	}
+
+	option{
+		name = "pirate.4.b"
+		80 = {
+			country_event = pirate.7
+		}
+
+		20 = {
+			###ALERT##
+			country_event = pirate.8
+		}
+	}
+
+}
+
+country_event = {
+	id = pirate.6
+	title = pirate.3.t
+	desc = pirate.6.d
+
+	is_triggered_only = yes
+
+	option{
+		name = "pirate.6.a"
+	}
+}
+
+country_event = {
+	id = pirate.7
+	title = pirate.3.t
+	desc = pirate.7.d
+
+	is_triggered_only = yes
+
+	option{
+		name = "pirate.7.a"
+	}
+}
+
+country_event = {
+	id = pirate.8
+	title = pirate.3.t
+	desc = pirate.8.d
+
+	is_triggered_only = yes
+
+	option{
+		name = "pirate.8.a"
+		random_list = {
+			50 = {
+				country_event = pirate.9
+			}
+
+			50 = {
+				country_event = pirate.10
+			}
+		}
+	}
+
+	option{
+		name = "pirate.8.b"
+		50 = {
+			country_event = pirate.9
+		}
+
+		50 = {
+			country_event = pirate.10
+		}
+	}
+
+}
+
+country_event = {
+	id = pirate.9
+	title = pirate.3.t
+	desc = pirate.9.d
+
+	is_triggered_only = yes
+
+	option{
+		name = "pirate.4.a"
+	}
+
+}
+
+country_event = {
+	id = pirate.10
+	title = pirate.3.t
+	desc = pirate.10.d
+
+	is_triggered_only = yes
+
+	option{
+		name = "pirate.10.a"
+	}
+}

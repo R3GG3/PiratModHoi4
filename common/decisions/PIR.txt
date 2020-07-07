@@ -1,0 +1,43 @@
+war_measures = {
+	PIR_execute_war_plan_usa = {
+		icon = generic_operation
+		available = {
+			has_war_with = USA
+		}
+		visible = {
+			has_completed_focus = pir_usa_war
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+
+		targeted_modifier = {
+			tag = USA
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+
+	PIR_execute_war_plan_eng = {
+		icon = generic_operation
+		available = {
+			has_war_with = ENG
+		}
+		visible = {
+			has_completed_focus = pir_uk_war
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		fire_only_once = yes
+		days_remove = 180
+		
+		targeted_modifier = {
+			tag = ENG
+			attack_bonus_against = 0.1
+			defense_bonus_against = 0.1
+		}
+	}
+}
