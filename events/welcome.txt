@@ -324,3 +324,16 @@ country_event = {
 		add_manpower = -10000
 	}
 }
+
+###RECRUTED###
+country_event = {
+	id = pirate.11
+	title = pirate.11.t
+	desc = pirate.11.d
+
+	is_triggered_only = yes
+
+	option{
+		name = "OK"
+	}
+}

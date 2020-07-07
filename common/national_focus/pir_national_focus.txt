@@ -497,6 +497,7 @@
 			factor = 1
 		}
 		completion_reward = {
+			country_event = pirate.11
 			hidden_effect = {
 				division_template = {
 					name = "Piracka Gwardia"
@@ -764,11 +765,60 @@ add_tech_bonus = {
 			factor = 1
 		}
 		completion_reward = {
-			add_tech_bonus = {
-    bonus = 1.0
-    uses = 1
-    category = motorized_equipment
-}
+			country_event = pirate.11
+			hidden_effect = {
+				318 = {
+					create_unit = { 
+						division = "name = \"9. Dywizja Bukanierów\" division_template = \"Dywizja Bukanierów\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"10. Dywizja Bukanierów\" division_template = \"Dywizja Bukanierów\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"1. Dywizja Bukanierów\" division_template = \"Dywizja Bukanierów\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"2. Dywizja Bukanierów\" division_template = \"Dywizja Bukanierów\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"3. Dywizja Bukanierów\" division_template = \"Dywizja Bukanierów\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"4. Dywizja Bukanierów\" division_template = \"Dywizja Bukanierów\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"5. Dywizja Bukanierów\" division_template = \"Dywizja Bukanierów\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"6. Dywizja Bukanierów\" division_template = \"Dywizja Bukanierów\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"7. Dywizja Bukanierów\" division_template = \"Dywizja Bukanierów\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"8. Dywizja Bukanierów\" division_template = \"Dywizja Bukanierów\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+				}
+			}
 		}
 	}
 	#Focus for pir_army_2
