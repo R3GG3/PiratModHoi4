@@ -31,9 +31,9 @@ news_event = {
 ###STEALING A GUN EVENT###
 
 ###TODO###
-- ADD EFFECTS
-- FIX PERCENTAGE
-- ADD POLISH TEXT AND TRANSLATE IT ONTO ENGLISH LATER
+# - ADD EFFECTS
+# - FIX PERCENTAGE
+# - ADD POLISH TEXT AND TRANSLATE IT ONTO ENGLISH LATER
 
 #pirate.3 = arrive at destination, way of 'convince' soldiers near the gate
 #pirate.3.a = try to convince them, that you are next on watch
@@ -72,27 +72,34 @@ country_event = {
 
 	option{
 		name = "pirate.3.a"
-		random_list = {
-			49 = {
-				country_event = pirate.4
-			}
+		hidden_effect = {
+			random_list = {
+				70 = {
+					country_event = pirate.4
+				}
 
-			51 = {
-				###ALERT##
-				country_event = pirate.8
+				30 = {
+					###ALERT##
+					country_event = pirate.8
+				}
 			}
 		}
+
 	}
 
 	option{
 		name = "pirate.3.b"
-		60 = {
-			country_event = pirate.5
-		}
+		hidden_effect = {
+			random_list = {
+				80 = {
+					country_event = pirate.5
+				}
 
-		40 = {
-			###ALERT##
-			country_event = pirate.8
+				20 = {
+					###ALERT##
+					country_event = pirate.8
+				}
+			}
 		}
 	}
 }
@@ -106,27 +113,33 @@ country_event = {
 
 	option{
 		name = "pirate.4.a"
-		random_list = {
-			50 = {
-				country_event = pirate.6
-			}
+		hidden_effect = {
+			random_list = {
+				40 = {
+					country_event = pirate.6
+				}
 
-			50 = {
-				###ALERT##
-				country_event = pirate.8
+				60 = {
+					###ALERT##
+					country_event = pirate.8
+				}
 			}
 		}
 	}
 
 	option{
 		name = "pirate.4.b"
-		80 = {
-			country_event = pirate.7
-		}
+		hidden_effect = {
+			random_list = {
+				90 = {
+					country_event = pirate.7
+				}
 
-		20 = {
-			###ALERT##
-			country_event = pirate.8
+				10 = {
+					###ALERT##
+					country_event = pirate.8
+				}
+			}
 		}
 	}
 
@@ -141,27 +154,33 @@ country_event = {
 
 	option{
 		name = "pirate.4.a"
-		random_list = {
-			50 = {
-				country_event = pirate.6
-			}
+		hidden_effect = {
+			random_list = {
+				40 = {
+					country_event = pirate.6
+				}
 
-			50 = {
-				###ALERT##
-				country_event = pirate.8
+				60 = {
+					###ALERT##
+					country_event = pirate.8
+				}
 			}
 		}
 	}
 
 	option{
 		name = "pirate.4.b"
-		80 = {
-			country_event = pirate.7
-		}
+		hidden_effect = {
+			random_list = {
+				90 = {
+					country_event = pirate.7
+				}
 
-		20 = {
-			###ALERT##
-			country_event = pirate.8
+				10 = {
+					###ALERT##
+					country_event = pirate.8
+				}
+			}
 		}
 	}
 
@@ -176,6 +195,23 @@ country_event = {
 
 	option{
 		name = "pirate.6.a"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 3000
+			producer = USA
+		}
+
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 2000
+			producer = USA
+		}
+
+		add_equipment_to_stockpile = {
+			type = motorized_equipment_1
+			amount = 1
+			producer = USA
+		}
 	}
 }
 
@@ -188,6 +224,18 @@ country_event = {
 
 	option{
 		name = "pirate.7.a"
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 2400
+			producer = USA
+		}
+
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 1600
+			producer = USA
+		}
 	}
 }
 
@@ -200,25 +248,31 @@ country_event = {
 
 	option{
 		name = "pirate.8.a"
-		random_list = {
-			50 = {
-				country_event = pirate.9
-			}
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = pirate.9
+				}
 
-			50 = {
-				country_event = pirate.10
+				50 = {
+					country_event = pirate.10
+				}
 			}
 		}
 	}
 
 	option{
 		name = "pirate.8.b"
-		50 = {
-			country_event = pirate.9
-		}
+		hidden_effect = {
+			random_list = {
+				50 = {
+					country_event = pirate.9
+				}
 
-		50 = {
-			country_event = pirate.10
+				50 = {
+					country_event = pirate.10
+				}
+			}
 		}
 	}
 
@@ -232,7 +286,24 @@ country_event = {
 	is_triggered_only = yes
 
 	option{
-		name = "pirate.4.a"
+		name = "pirate.9.a"
+
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 1500
+			producer = USA
+		}
+
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 1000
+			producer = USA
+		}
+
+		add_political_power = -20
+		add_war_support = -0.10
+		add_stability = -0.10
+		add_manpower = -5000
 	}
 
 }
@@ -246,5 +317,10 @@ country_event = {
 
 	option{
 		name = "pirate.10.a"
+
+		add_political_power = -50
+		add_war_support = -0.20
+		add_stability = -0.20
+		add_manpower = -10000
 	}
 }

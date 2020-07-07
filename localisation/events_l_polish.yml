@@ -3252,3 +3252,25 @@
  pirate.3.d:0 "Ty i twoja kompania podpłynęliście pod osłoną nocy do jednej z amerykańskich wysp. Przemierzając parę kilometrów napotkaliście cywila i udając, że jesteście zagubionymi żołnierzami amerykańskimi wskazał wam drogę magazynu wojskowego, znajdującego się nieopodal bazy militarnej. Kiedy już tam dotarliście okazało się, że wejścia do środka pilnuje dwóch żołnierzy, ale nie możecie sobie pozwolić na otwartą walkę, bo nie macie szans z całą bazą. Co robicie?"
  pirate.3.a:0 "Spróbuję ich przekonać, że zostaliśmy wyznaczeni na następną wartę."
  pirate.3.b:0 "Zdejmiemy ich po cichu."
+
+ pirate.4.d:0 "Mieliście szczęście, że na warcie stało 2 szeregowych, którzy nie znali kolegów z innych zmian, toteż udało nam się ich przekonać, że jesteście następni. Kiedy tylko poszli, otworzyliście bramę magazynu i zaczęliście wyjmować broń. Tu też pojawia się problem, jak przetransportować tak dużą ilość broni? Skoro obok jest baza to i mają ciężarówki, w ten sposób zabierzecie cały sprzęt, ale nieźle ryzykując. Możecie też iść na piechotę, ale nie udźwigniecie wszystkiego. Co robicie?"
+ pirate.4.a:0 "Ukradnijmy ciężarówkę."
+ pirate.4.b:0 "Wróćmy na statek pieszo."
+
+ pirate.5.d:0 "Precyzyjnie dźgnąłeś w plecy żołnierza, który dał się łatwo podejść, prawdopodbnie dlatego, że był szeregowym, bynajmniej sądząc po naszywce. Twój kompan zrobił to samo z drugim żołnierzem. Otworzyliście bramę magazynu i zaczęliście wyjmować broń. Tu też pojawia się problem, jak przetransportować tak dużą ilość broni? Skoro obok jest baza to i mają ciężarówki, w ten sposób zabierzecie cały sprzęt, ale nieźle ryzykując. Możecie też iść na piechotę, ale nie udźwigniecie wszystkiego. Co robicie?"
+
+ pirate.6.d:0 "Udało wam się podkraść do wojskowej ciężarówki na zewnętrznym parkingu, włamaliście się do środka, odpaliliście samochód, kluczykami, które były na desce rozdzielczej i odjechaliście na statek, zanim żołnierze zrozumieli błąd, że nie zatrzymali waszej ciężarówki."
+ pirate.6.a:0 "Hurra!"
+
+ pirate.7.d:0 "Zdecydowaliście się nie ryzykować, wykrycia i zabrać to co możecie udźwignąć prosto na statek."
+ pirate.7.a:0 "Po co ryzykować, i tak dużo skradliśmy!"
+ 
+ pirate.8.d:0 "Podczas waszego procederu, żołnierz na patrolu spostrzegł co robicie i wołał jak najgłośniej alarm, przy tym do was strzelając. Schowani za osłoną szybko obmyślacie plan co robić dalej, bo przecież nie zostawicie całego tego sprzętu! Możecie uciec w las, przeczekać schowani, i potem wrócić na statek, albo brać nogi za pas i spierdalać prosto na statek, jednak droga nie jest krótka. Co robicie?"
+ pirate.8.a:0 "Ucieczka w las"
+ pirate.8.b:0 "Ucieczka prosto na statek"
+
+ pirate.9.d:0 "Niezależnie od tego co przeszliście to jednak udało wam się wrócić na statek z połową skradzionego sprzętu."
+ pirate.9.a:0 "Chociaż tyle"
+
+ pirate.10.d:0 "Kurwa! Nie dość, że zgubiliście niemal cały sprzęt, to i straciliście prawie połowę załogi biorącej udział w tym procederze i jej broń, czy to się opłacało?"
+ pirate.10.a:0 "KURWA"
