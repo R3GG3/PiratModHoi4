@@ -494,35 +494,72 @@
 			factor = 1
 		}
 		completion_reward = {
-			division_template = {
-				name = "Piracka Gwardia"
+			hidden_effect = {
+				division_template = {
+					name = "Piracka Gwardia"
 
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }	
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-					infantry = { x = 2 y = 0 }	
-					infantry = { x = 2 y = 1 }	
-					infantry = { x = 2 y = 2 }	
-					infantry = { x = 3 y = 0 }	
-					infantry = { x = 3 y = 1 }	
-					infantry = { x = 3 y = 2 }	
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }	
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 2 y = 0 }	
+						infantry = { x = 2 y = 1 }	
+						infantry = { x = 2 y = 2 }	
+						infantry = { x = 3 y = 0 }	
+						infantry = { x = 3 y = 1 }	
+						infantry = { x = 3 y = 2 }	
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+						artillery = { x = 0 y = 1 }
+						engineer = { x = 0 y = 2 }
+					}
 				}
-				support = {
-					recon = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1 }
-					engineer = { x = 0 y = 2 }
+				318 = {
+					create_unit = { 
+						division = "name = \"1. Piracka Gwardia\" division_template = \"Piracka Gwardia\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"2. Piracka Gwardia\" division_template = \"Piracka Gwardia\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"3. Piracka Gwardia\" division_template = \"Piracka Gwardia\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"4. Piracka Gwardia\" division_template = \"Piracka Gwardia\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"5. Piracka Gwardia\" division_template = \"Piracka Gwardia\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"6. Piracka Gwardia\" division_template = \"Piracka Gwardia\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"7. Piracka Gwardia\" division_template = \"Piracka Gwardia\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
+
+					create_unit = { 
+						division = "name = \"8. Piracka Gwardia\" division_template = \"Piracka Gwardia\" start_experience_factor = 0.2" 
+						owner = ROOT
+					}
 				}
-			}
-			318 = {
-				create_unit = {
-					division = 'division_template = "Piracka Gwardia" start_experience_factor = 0.3'
-					owner = ROOT
-				}
-			}
+			}	
 		}
 	}
 	#Focus for pir_ship_attack
@@ -916,7 +953,7 @@ add_tech_bonus = {
 	focus = {
 		id = usa_civil_war
 		icon = GFX_goal_generic_army_doctrines
-		x = 22
+		x = 23
 		y = 5
 		cost = 10
 		available_if_capitulated = yes
@@ -941,6 +978,54 @@ add_tech_bonus = {
 			}
 		}
 	}
+
+	focus = {
+		id = pir_usa_war
+		icon = GFX_focus_ger_strike_at_the_source
+		x = 24
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = usa_civil_war }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = USA
+				type = annex_everything
+			}
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_gray show_effect_tooltip = yes show_modifiers = yes }
+		}
+	}
+
+	focus = {
+		id = pir_uk_war
+		icon = GFX_focus_attack_britain
+		x = 21
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = PIR_form_goverment }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 1
+		}
+
+		completion_reward = {
+			declare_war_on = {
+				target = ENG
+				type = annex_everything
+			}
+			unlock_decision_tooltip = { decision = USA_execute_war_plan_gray show_effect_tooltip = yes show_modifiers = yes }
+		}
+	}
+
+
+
+
 	#Focus for cuba_war
 	focus = {
 		id = cuba_war
@@ -951,9 +1036,14 @@ add_tech_bonus = {
 		available_if_capitulated = yes
 		prerequisite = { focus = break_monroe }
 		mutually_exclusive = { focus = cuba_ally }
-		search_filters = { FOCUS_FILTER_ANNEXATION } 
 		ai_will_do = {
 			factor = 1
+		}
+		completion_reward = {
+			declare_war_on = {
+				target = CUB
+				type = annex_everything
+			}
 		}
 	}
 	#Focus for talk_to_stalin
@@ -968,6 +1058,38 @@ add_tech_bonus = {
 		search_filters = { FOCUS_FILTER_POLITICAL } 
 		ai_will_do = {
 			factor = 1
+		}
+
+		completion_reward = {
+			diplomatic_relation = {
+				country = SOV
+				relation = non_aggression_pact
+				active = yes
+			}
+
+			diplomatic_relation = {
+				country = SOV
+				relation = military_access
+				active = yes
+			}
+
+			diplomatic_relation = {
+				country = SOV
+				relation = docking_rights
+				active = yes
+			}
+
+			add_opinion_modifier = {
+				target = SOV
+				modifier = in_faction
+			}
+
+			SOV = {
+				add_opinion_modifier = {
+					target = PIR
+					modifier = in_faction
+				}
+			}
 		}
 	}
 	#Focus for war_with_reich
@@ -991,10 +1113,11 @@ add_tech_bonus = {
 				type = annex_everything
 			}
 
-			add_to_war = { 
-				targeted_alliance = SOV
-				enemy = GER
-				hostility_reason = asked_to_join
+			SOV = {
+				declare_war_on = {
+					target = GER
+					type = annex_everything
+				}
 			}
 		}
 	}
@@ -1032,6 +1155,37 @@ add_tech_bonus = {
 		ai_will_do = {
 			factor = 1
 		}
+		completion_reward = {
+			diplomatic_relation = {
+				country = GER
+				relation = non_aggression_pact
+				active = yes
+			}
+
+			diplomatic_relation = {
+				country = GER
+				relation = military_access
+				active = yes
+			}
+
+			diplomatic_relation = {
+				country = GER
+				relation = docking_rights
+				active = yes
+			}
+
+			add_opinion_modifier = {
+				target = GER
+				modifier = in_faction
+			}
+
+			GER = {
+				add_opinion_modifier = {
+					target = PIR
+					modifier = in_faction
+				}
+			}
+		}
 	}
 	#Focus for war_with_ussr
 	focus = {
@@ -1054,10 +1208,11 @@ add_tech_bonus = {
 				type = annex_everything
 			}
 
-			add_to_war = { 
-				targeted_alliance = GER
-				enemy = SOV
-				hostility_reason = asked_to_join
+			GER = {
+				declare_war_on = {
+					target = SOV
+					type = annex_everything
+				}
 			}
 		}
 	}

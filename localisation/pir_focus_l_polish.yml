@@ -4,6 +4,9 @@
  PIR_settle_island_desc:0 "Musimy zbudować podstawowe rzeczy, zanim zrobimy coś innego!"
  PIR_form_goverment:0 "Formowanie Rządu"
  PIR_form_goverment_desc:0 "Piraci ustanawiają własny rząd, aby obronić się przed Imperlialistyczną Cywilizacją."
+
+ pir_uk_war:0 "Zemsta na Brytyjczykach"
+ pir_uk_war_desc:0 "Myślę, że wszyscy pamiętają wojny pirackie z brytyjczykami, czas się odwdzięczyć, za to co nam zrobili!"
  
  go_fascism:0 "Piraci Najlepsi!"
  go_fascism_desc:0 "Hitler może pierdolić, że Niemcy są najlepsze, ale to my królujemy na morzu!"
@@ -23,6 +26,8 @@
  break_monroe_desc:0 "Wysepki wokół nas czują się za bezpiecznie, przekonajmy ich, że są w błędzie!"
  usa_civil_war:0 "Podburzenie Ludu USA"
  usa_civil_war_desc:0 "W ten sposób osłabimy Kolosa!"
+ pir_usa_war:0 "Zaatakowanie USA"
+ pir_usa_war_desc:0 "Teraz gdy Kolos leży ranny, można go dobić, do boju!"
  cuba_ally:0 "Sojusz z Kubą"
  cuba_ally_desc:0 "Jako, że obok nas jest Kuba, może zgodzi się dołączyć do naszej sprawy!"
  cuba_war:0 "Wojna z Kubą"
