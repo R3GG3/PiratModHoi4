@@ -20,3 +20,7 @@
 [06.07.2020]
 + dodano admirałów
 + znacznie usprawniono drzewko (nowe focusy, fix'y)
+
+[08.07.2020]
++ poprawiono drzewko
++ dodano nowe cele do drzewka
