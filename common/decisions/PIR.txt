@@ -51,6 +51,10 @@ PIR_attack_on_ships = {
 		ai_will_do = {
 			factor = 1
 		}
+
+		complete_effect = {
+			country_event = pir_attack_on_ship.1
+		}
 	}
 
 	PIR_attack_on_fleet = {
@@ -63,6 +67,10 @@ PIR_attack_on_ships = {
 		#country_event = pir_attack_on_ship.2
 		ai_will_do = {
 			factor = 1
+		}
+
+		complete_effect = {
+			country_event = pir_attack_on_ship.2
 		}
 	}
 

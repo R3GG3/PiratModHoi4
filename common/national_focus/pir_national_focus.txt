@@ -496,7 +496,7 @@
 		icon = GFX_goal_generic_positive_trade_relations
 		x = 11
 		y = 3
-		cost = 10
+		cost = 0
 		available_if_capitulated = yes
 		prerequisite = { focus = pir_industrial_civ_1 }
 		mutually_exclusive = { focus = pir_ship_attack }
@@ -594,7 +594,7 @@
 		icon = GFX_goal_generic_navy_anti_submarine
 		x = 15
 		y = 3
-		cost = 10
+		cost = 0
 		available_if_capitulated = yes
 		prerequisite = { focus = pir_industrial_civ_1 }
 		mutually_exclusive = { focus = pir_trade }

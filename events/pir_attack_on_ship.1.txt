@@ -11,10 +11,6 @@ country_event = {
 
     is_triggered_only = yes
 
-    trigger = {
-        has_decision = PIR_attack_on_convoy
-    }
-
     option{
         name = pir_attack_on_ship.1.a
         hidden_effect = {
