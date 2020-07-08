@@ -85,7 +85,7 @@ country_event = {
         add_equipment_to_stockpile = {
             type = convoy_1
             amount = 100
-            producer = USA
+            producer = PIR
         }
 
         army_experience = 10
@@ -123,19 +123,19 @@ country_event = {
         add_equipment_to_stockpile = {
             type = infantry_equipment_1
             amount = 1718
-            producer = USA
+            producer = PIR
         }
 
         add_equipment_to_stockpile = {
             type = support_equipment_1
             amount = 1718
-            producer = USA
+            producer = PIR
         }
 
         add_equipment_to_stockpile = {
             type = convoy_1
             amount = 100
-            producer = USA
+            producer = PIR
         }
 
         army_experience = 20
