@@ -3277,3 +3277,39 @@
 
  pirate.11.t:0 "Zrekrutowanie jednostek"
  pirate.11.d:0 "Nowe osoby zgodziły się na dołączenie do naszej sprawy, witajcie bracia!"
+
+ pir_attack_on_ship.1.t:0 "Atak na Statek Handlowy"
+ pir_attack_on_ship.1.d:0 "Pływaliście pod banderą państwową USA, gdy nagle ujrzeliście statek handlowy na horyzoncie, płynęliście w jego stronę, ukazując chęć identyfikacja ich, bo przecież mogli być niebezpieczni dla pięknego państwa Ameryki haha. Gdy pojawiliście się dostatecznie blisko, na waszym maszcie pojawiła się czarna bandera! Widząc to zaczęli czym prędzej uciekać, ale było już za późno. Wy z kolei po ich odmowie kapitulacji, wznieśliście czerwoną banderę, czyli nie bierzemy jeńców. Po krótkiej wymianie ognia, zrównaliście się z nimi burta w burtę i przeszliście do abordażu.."
+ pir_attack_on_ship.1.a:0 "Do Boju!"
+
+ pir_attack_on_ship.2.t:0 "Atak na Wrogą Flotę"
+ pir_attack_on_ship.2.d:0 "Patrolujący statek zobaczył flotę wroga na horyzoncie, płynącą, aby przejąć dominację morską nad rejonem, jak wielka jest, ciężko określić, ale trzeba stawić temu czoła! Poza tym pomyśl o zyskach. Z waszego portu wypłynęła flota, której jesteś admirałem. Stojąc na statku flagowym wydajesz rozkaz do bezpośredniego ataku, najsilniejszymi statkami, przy tym oskrzydlając wroga najzwinniejszymi. Przeciwnik nie jest jednak amatorem, zaczyna się walka. Po jakimś czasie walki, obie floty są tak zniszczałe, że decydujecie się na ryzykowny ruch, a mianowicie abordaż ich statku flagowego, aby pozostałe zostały rozbite. Jednak jesteście piratami, musicie dać radę i pokazać co oznacza pływanie pod jolly rogerem!"
+ pir_attack_on_ship.2.a:0 "Abordaż!"
+
+ pir_attack_on_ship.3.t:0 "Zaatakowanie Statku Generała"
+ pir_attack_on_ship.3.d:0 "Podczas pewnej walki, dowiedziałeś się, że na jednym z statku znajduje się generał, który był transportowany do jednej z armii, nie tracąc czasu postanowiłeś zaatakować ten statek strzelając ze wszystkich dział. Jednak jak mogło się okazać, z uwagi na ważność tego statku był dobrze uposażony, za dobrze. Zdecydowałeś zatem, że dokonacie abordażu. Zrównaliście się ze sobą, zarzuciliście liny, ta walka przejdzie do historii.."
+ pir_attack_on_ship.3.a:0 "Zabić Generała!"
+
+ pir_attack_on_ship.4.t:0 "Atak na Statek Handlowy"
+ pir_attack_on_ship.4.d:0 "Ty i twoi kompani dzielnie i z zawziętością ostrzeliwaliście z karabinów przeciwników, a gdy tylko nadarzała się okazja, cieliście ich swoimi kordelasami ku czci przodków. Ostatecznie wybiliście całą załogę i zabraliście wszelkie dobra razem z statkiem."
+ pir_attack_on_ship.4.a:0 "Hurra!"
+
+ pir_attack_on_ship.5.t:0 "Atak na Statek Handlowy"
+ pir_attack_on_ship.5.d:0 "Okazało się, że to byli godni przeciwnicy, którzy nie oddali wam ani milimetra ich statku. Gdy tylko któryś z twoich kompanów próbował wejść na ich statek, padał jak kłoda. Ostatecznie przecięliście cumy i wykonaliście zwrot w kierunku przeciwnym uciekając najprędzej jak się da. Co za koszmarny widok.."
+ pir_attack_on_ship.5.a:0 "KURWA"
+
+ pir_attack_on_ship.6.t:0 "Atak na Wrogą Flotę"
+ pir_attack_on_ship.6.d:0 "Twoi wojowie dzielnie walczyli, ale to ty wykazałeś się największą odwagą, a może głupotą, ale tak czy inaczej z kosmicznie dobrym skutkiem! Kto by pomyślał, że jeden granat wyrządzi takie szkody i jego odłamek trafi ich kapitana w szyję haha! Załoga wroga, która byja już na dobiciu skapitulowała.. ii została szybko rozstrzelana. Statki jednak nie nadają się do użytku, a wasze muszą udać się na naprawy, ale myśląc pozytywnie, przechwyciliście ich ładownie, militarnym wyposażeniem."
+ pir_attack_on_ship.6.a:0 "Hurra!"
+
+ pir_attack_on_ship.7.t:0 "Atak na Wrogą Flotę"
+ pir_attack_on_ship.7.d:0 "Przeceniliście swoje siły, a przy tym wrogi statek zaczął ostrzeliwać wasz, nie bacząc co się stanie jeżeli przez przypadek trafią sojuszniczy, taka była ich desperacja. Wielu twoich ludzi zginęło od ostrzału i było zmuszonych do szturmu na wrogie karabiny, do samych przeciwników dotarło nielicznych, w tym ty. Walczyliście niczym lwy, ale gdy ujrzałeś, że przegrana jest niechybna, ruszyłeś z na ich kapitana, wielokrotnie go dźgając, lecz przez ostrzał wroga, dostałeś 3 kulę, i wypadłeś za burtę. Bitwa została przegrana, jednak ty przeżyłeś, wróciłeś do stolicy i opłakiwałeś straconych braci myśląc o zemście."
+ pir_attack_on_ship.7.a:0 "ZEMSTA"
+
+ #pir_attack_on_ship.8.t:0 "Zaatakowanie Statku Generała"
+ #pir_attack_on_ship.8.d:0 "Było ich stanowczo za dużo. Podczas walki liczebność wroga was miażdżyła, ale Ty i paru kompanów przedarliście się pod pokład znajdując generała, który choć bez walki się nie poddał, to ostatecznie został przez was rozstrzelany. Nie ryzykując dalszej walki, która mogłaby się skończyć tragicznie wróciliście na swój statek i czym prędzej oddaliliście się od wrogiego statku."
+ #pir_attack_on_ship.8.a:0 "Ważne, ze ich generał nie żyje."
+
+ #pir_attack_on_ship.9.t:0 "Zaatakowanie Statku Generała"
+ #pir_attack_on_ship.9.d:0 "Niestety ich liczba was przerosła na tyle, że samo wejście na ich statek okazało się rzeczą niemal niemożliwą. Gdy tylko to pojęliście chcieliście uciec, ale na to też było późno, na szczęście nie za późno. Daliście radę uciec, jednak z wielkimi stratami!"
+# pir_attack_on_ship.9.a:0 "KURWA"

@@ -1,0 +1,5 @@
+PIR_attack_on_ships = {
+	allowed = {
+		original_tag = PIR
+	}
+}
