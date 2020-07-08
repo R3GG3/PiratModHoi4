@@ -17,7 +17,7 @@
 #			ship = { name = "Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PIR } } }
 #			ship = { name = "Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PIR } } }
 #			ship = { name = "Destroyer" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = PIR } } }
-#		}		
+		}		
 		task_force = {
 			name = "Piracka Dywizja Okretów Podwodnych"
 			location = 4641
@@ -31,7 +31,7 @@
 #			ship = { name = "Submarine" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = PIR } } }
 #			ship = { name = "Submarine" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = PIR } } }
 #			ship = { name = "Submarine" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = PIR } } }
-#		}
+		}
 #		
 		task_force = {
 			name = "Piracka Dywizja Krążowników"
@@ -44,6 +44,6 @@
 #			ship = { name = "Battleship" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = PIR } } }	
 #			ship = { name = "Battleship" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = PIR } } }	
 #			ship = { name = "Battleship" definition = battleship equipment = { ship_hull_heavy_1 = { amount = 1 owner = PIR } } }	
-#		}
+		}
 	}
 }
