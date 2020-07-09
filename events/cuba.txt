@@ -38,7 +38,7 @@ news_event = {
     id = pir_cuba.2
     title = pir_cuba.2.t
     desc = pir_cuba.2.d
-
+    major = yes
     picture = GFX_news_event_001
 
     is_triggered_only = yes

@@ -3217,3 +3217,88 @@
  lar_test.1.d:0 "TODO_LAR_BC: this is a test\nThis:[This.GetName]\nFrom:[From.GetName]\nFrom.From:[From.From.GetName]\nRoot:[Root.GetName]\n"
  lar_collab_gov.1.t:0 "[From.GetAdjective] Partisans in [Root.GetNameDef]"
  lar_collab_gov.1.d:0 "[From.GetNameDefCap] have recently increased their efforts to build collaboration within our nation. A number of [This.GetAdjective] politicians have started speaking rather sympathetically about the [From.GetAdjective] regime, and many partisans within our nation are turning their [From.GetRulingIdeology] sentiment into direct support for [From.GetNameDef].\n\nThe growing [From.GetAdjective] influence in our nation will undoubtedly lower [Root.GetAdjective] resistance and may even lead to a new [From.GetRulingIdeology] government in collaboration with [From.GetNameDef] in the event that [Root.GetNameDef] should capitulate."
+
+pirate.1.t:0 "Welcome on Caribbeans!"
+ pirate.1.d:0 "Hello To You Pirate, I think that you know rules of hoi4, so it is nothing to write about, have fun!"
+ pirate.1.a:0 "Of course!"
+
+ event_usa_civil_war.1.t:0 "Civil War in USA"
+ event_usa_civil_war.1.d:0 "Pirates have shown people of USA how to be really free and don't need to pay any taxes, listen to others or be on their mercy. People who want their nation to be like a long time before, have risen up against goverment!"
+
+ pir_cuba.1.t:0 "Invite Cuba to fraction"
+ pir_cuba.1.d:0 "Pirates want us in their fraction as brothers, but we don't know if they'll accept our deny peacefully.."
+ pir_cuba.1.a:0 "Accept"
+ pir_cuba.1.b:0 "Refuse"
+ pir_cuba.2.t:0 "Cuba accepted invite to fraction!"
+ pir_cuba.2.d:0 "Today is the day when Cuba, a country near USA, decided to join Brotherhood of Pirates as their ally."
+ pir_cuba.3.t:0 "Cuba refuse to join fraction."
+ pir_cuba.3.d:0 "We will kill you for this!"
+
+ pirate.2.t:0 "Monroe's Doctrine has been destroyed!"
+ pirate.2.d:0 "As in title, the Monroe's Doctrine has been destroyed! We heard, that this thing happened beacuse of pirates whose ships attacked base of each country in doctrine, with flag of different country from doctrine, so it seemed like they're fighting with each other!"
+
+ pirate.3.t:0 "Stealing Guns"
+ pirate.3.d:0 "You and your company swam under the shield of night to one of american's islands. After a few miles you've met a civilian and you pretended, that you and your crew are lost soldiers, so he pointed a way to military's storage, which was near army outpost. When you arrived there you saw, that entry is guarded by two soldiers, but you can not let yourself on an open combat, beacuse you don't have any chance with that amount of soldiers, like were in outpost. What next?"
+ pirate.3.a:0 "I will try to convince them, that me and my comrade are next on watch."
+ pirate.3.b:0 "We will take them down quietly."
+
+ pirate.4.d:0 "You had lucky, beacuse on watch these soldiers were rookies, who don't know their colleagues from other watches, so you convince them that you are next on watch. When ty went away, you immediately opened the gate and started to took all the equipment they had. Here is also another problem, how to transportate that huge amount of weapons? I think next to the outpost, there should be parking with trucks on it. That is good way, but risky also. On the other hand, you can go straight to the ship, but some equipment will be lost. What next?"
+ pirate.4.a:0 "Steal the truck."
+ pirate.4.b:0 "Go to ship."
+
+ pirate.5.d:0 "You stabbed a soldier in back with such easyness, maybe beacuse he was a private, at least thinking by the patch. Your compan did the same with second soldier. You immediately opened the gate and started to took all the equipment they had. Here is also another problem, how to transportate that huge amount of weapons? I think next to the outpost, there should be parking with trucks on it. That is good way, but risky also. On the other hand, you can go straight to the ship, but some equipment will be lost. What next?"
+
+ pirate.6.d:0 "You successfully sneak to the truck on outdoor parking, break into, launch with keys, kluczykami, which were on dashboard and rode to ship, before soldiers recognized their huge mistake, and by that I mean stopping strange, fast riding military truck haha!."
+ pirate.6.a:0 "Hurray!"
+
+ pirate.7.d:0 "You decided to not risk detection, and take all you can carry straight to the ship."
+ pirate.7.a:0 "Why should we risk, if we have a lot of equipment anyway!"
+ 
+ pirate.8.d:0 "While you were busy with something, soldier on watch saw what are you doing and shout as fast, as he can 'ALARM! ALARM!' and also shoot to you. Covered behind the low wall, you're trying to fast plan what to do next, beacuse obviously you won't give up on that equipment! You can run away to the forest, wait some time, and go back to ship, or you can believe in yourself and run as fast, as you can to ship, but path is not short. What next?"
+ pirate.8.a:0 "Escape to forest"
+ pirate.8.b:0 "Escape to ship"
+
+ pirate.9.d:0 "Independently what you went through, you succesfully came back with half of stolen equipment."
+ pirate.9.a:0 "At least we have something."
+
+ pirate.10.d:0 "Fuck! We lost all equipment, and almost a half of crew with their weapons, was that even worth it?"
+ pirate.10.a:0 "FUCK"
+
+ pirate.11.t:0 "New units recruited!"
+ pirate.11.d:0 "New people agreed to join our cause, welcome brothers!"
+
+ pir_attack_on_ship.1.t:0 "Attack on Merchant Ship"
+ pir_attack_on_ship.1.d:0 "You were sailng under USA flag, when suddenly you saw convoy on horizon. You were sailng to him, as you wanted to identify ship, beacuse you obviously care about danger it could bring for beautiful USA haha. When you were close enough, on your mast appeared black flag! When they saw it, there was no time to escape. After they refuse capitulation, you raised red flag, which stands for 'we won't take hostiles'. After a short shootout with cannons, you equalize with them, side to side and started to boarding.."
+ pir_attack_on_ship.1.a:0 "Attack!"
+
+ pir_attack_on_ship.2.t:0 "Attack on Enemy Fleet"
+ pir_attack_on_ship.2.d:0 "Patrolling ship saw enemy fleet on horizon, that were sailng, to take control at sea's region, how big this fleet is, it's hard to say, but we have to face it! And think about profits from fight! Ally fleet came out from your port. You are its admiral. You give order to direct combat, with strongest ships, and flank enemy with lightest ones. Enemy is not amateur tough, and the fight has begun. After some time of battle, both fleets are that damaged, that you decide to do final, very risky move, viz board their flag ship, that the others would be broken up and run away. But you're pirates, you have to handle with it and show what sailing under jolly roger mean!"
+ pir_attack_on_ship.2.a:0 "Board!"
+
+ #pir_attack_on_ship.3.t:0 "Zaatakowanie Statku Generała"
+ #pir_attack_on_ship.3.d:0 "Podczas pewnej walki, dowiedziałeś się, że na jednym z statku znajduje się generał, który był transportowany do jednej z armii, nie tracąc czasu postanowiłeś zaatakować ten statek strzelając ze wszystkich dział. Jednak jak mogło się okazać, z uwagi na ważność tego statku był dobrze uposażony, za dobrze. Zdecydowałeś zatem, że dokonacie abordażu. Zrównaliście się ze sobą, zarzuciliście liny, ta walka przejdzie do historii.."
+ #pir_attack_on_ship.3.a:0 "Zabić Generała!"
+
+ pir_attack_on_ship.4.t:0 "Attack on Merchant Ship"
+ pir_attack_on_ship.4.d:0 "You and your comrades brave and with persistence shoot enemies with carbines, and when you only had a chance, you cut them with your cutlasses in memorial of your fathers. Finally you beat their crew up and loot all what there were, even with detachable parts of ships."
+ pir_attack_on_ship.4.a:0 "Hurray!"
+
+ pir_attack_on_ship.5.t:0 "Attack on Merchant Ship"
+ pir_attack_on_ship.5.d:0 "It appeared, that they were a brave fighters, who won't give them even an inch of their ship. When somebody of your crew tried to get on their ship, it immediately fell like a log. Finally you cut the lines and turn in opposed direction escaping as fast as can. What a horrible view.."
+ pir_attack_on_ship.5.a:0 "FUCK"
+
+ pir_attack_on_ship.6.t:0 "Atak on Enemy Fleet"
+ pir_attack_on_ship.6.d:0 "Your warriors were fighting bravely, but you showed real courage, maybe stupidness, but anyway with gigantic effect! Who would think, that one grenade will do some damages and its part will hit their captain in neck haha! Enemy crew, that was almost done, decided to capitulate.. and crew have been thrown aboard. Ships however are useless beacuse of damages, and your have to sail to nearest port on repairs, but hey, you intercepted their military's storage with large amounts of weapons, and other equipment."
+ pir_attack_on_ship.6.a:0 "Hurray!"
+
+ pir_attack_on_ship.7.t:0 "Atak on Enemy Fleet"
+ pir_attack_on_ship.7.d:0 "You overestimated your strength, and enemy ships started to shoot yours, without thinking what will happen, if they hit ally, that huge was their desperation. A lot of your comrades died beacuse of firing and you had to assault on enemy's carbines. Not many allies arrived to opponents, but you did. You fought like a lion, but when you saw, that defeat is inevitable, you rush on their captain, and stab him about 10 to 15 times, but you got shoot from enemy, specifically 3 bullets, and you fell aboard. The battle was lost, but you survived, you came back to capital and mourned lost brothers, while thinking about revenge."
+ pir_attack_on_ship.7.a:0 "REVENGE"
+
+ #pir_attack_on_ship.8.t:0 "Zaatakowanie Statku Generała"
+ #pir_attack_on_ship.8.d:0 "Było ich stanowczo za dużo. Podczas walki liczebność wroga was miażdżyła, ale Ty i paru kompanów przedarliście się pod pokład znajdując generała, który choć bez walki się nie poddał, to ostatecznie został przez was rozstrzelany. Nie ryzykując dalszej walki, która mogłaby się skończyć tragicznie wróciliście na swój statek i czym prędzej oddaliliście się od wrogiego statku."
+ #pir_attack_on_ship.8.a:0 "Ważne, ze ich generał nie żyje."
+
+ #pir_attack_on_ship.9.t:0 "Zaatakowanie Statku Generała"
+ #pir_attack_on_ship.9.d:0 "Niestety ich liczba was przerosła na tyle, że samo wejście na ich statek okazało się rzeczą niemal niemożliwą. Gdy tylko to pojęliście chcieliście uciec, ale na to też było późno, na szczęście nie za późno. Daliście radę uciec, jednak z wielkimi stratami!"
+# pir_attack_on_ship.9.a:0 "KURWA"
